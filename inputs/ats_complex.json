@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Jane Doe",
+    "email": "jane.doe.pro@example.com",
+    "phone": "(415)555-2671",
+    "date_of_birth": "1990-05-15",
+    "headline": "Senior Software Engineer",
+    "location": {
+      "city": "San Francisco",
+      "region": "CA",
+      "country": "usa"
+    },
+    "years_of_experience": 8,
+    "skills": [
+      "Python",
+      "  machine learning",
+      "C++  ",
+      "distributed systems"
+    ]
+  },
+  {
+    "name": "Jane Doe",
+    "email": "jane.doe@gmail.com",
+    "phone": "4155552671",
+    "date_of_birth": "1990/05/15",
+    "skills": [
+      "python",
+      "ML/AI"
+    ],
+    "location": "United States"
+  },
+  {
+    "name": "Alex Smith",
+    "email": "asmith99@example.com",
+    "phone": "123-456-7890",
+    "date_of_birth": "Jan 1, 1999",
+    "headline": "Junior Dev",
+    "years_of_experience": 1,
+    "skills": [
+      "react",
+      "node"
+    ]
+  }
+]
