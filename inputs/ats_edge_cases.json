@@ -1,19 +1,19 @@
 [
   {
     "name": "Same Name",
-    "email": "person1@example.com",
+    "email": ["person1@example.com"],
     "phone": "111-111-1111",
     "date_of_birth": "1990-01-01"
   },
   {
     "name": "Same Name",
-    "email": "person2@example.com",
+    "email": ["person2@example.com"],
     "phone": "222-222-2222",
     "date_of_birth": "1985-05-05"
   },
   {
     "name": null,
-    "email": "no_name@example.com",
+    "email": ["no_name@example.com"],
     "phone": "garbled! phone num",
     "date_of_birth": "invalid_date_string",
     "skills": []
