@@ -2,6 +2,16 @@ import uuid
 from typing import List, Dict, Any
 from models import CanonicalProfile, Provenance, Skill
 
+def _flatten(value):
+    """Flatten a value that may be a flat list or a list-of-lists into a flat list of strings."""
+    result = []
+    for item in value:
+        if isinstance(item, list):
+            result.extend(item)
+        else:
+            result.append(item)
+    return result
+
 def group_candidate_records(records: List[Dict[str, Any]]) -> List[List[Dict[str, Any]]]:
     """
     Groups raw records into clusters belonging to the same entity based on matching priorities:
@@ -19,15 +29,15 @@ def group_candidate_records(records: List[Dict[str, Any]]) -> List[List[Dict[str
             is_match = False
             for existing_record in cluster:
                 # 1. Overlapping emails
-                emails1 = set(record.get("emails", []))
-                emails2 = set(existing_record.get("emails", []))
+                emails1 = set(_flatten(record.get("emails", [])))
+                emails2 = set(_flatten(existing_record.get("emails", [])))
                 if emails1 and emails2 and emails1.intersection(emails2):
                     is_match = True
                     break
                     
                 # 2. Overlapping normalized phones
-                phones1 = set(record.get("phones", []))
-                phones2 = set(existing_record.get("phones", []))
+                phones1 = set(_flatten(record.get("phones", [])))
+                phones2 = set(_flatten(existing_record.get("phones", [])))
                 if phones1 and phones2 and phones1.intersection(phones2):
                     is_match = True
                     break
@@ -87,14 +97,14 @@ def merge_candidate_records(records: List[Dict[str, Any]]) -> CanonicalProfile:
                 )
 
         # 2. Array Fields (Deduplicate and append)
-        for email in record.get("emails", []):
+        for email in _flatten(record.get("emails", [])):
             if email not in merged_data["emails"]:
                 merged_data["emails"].append(email)
                 merged_data["provenance"].append(
                     Provenance(field="emails", source=source, method=method)
                 )
 
-        for phone in record.get("phones", []):
+        for phone in _flatten(record.get("phones", [])):
             if phone not in merged_data["phones"]:
                 merged_data["phones"].append(phone)
                 merged_data["provenance"].append(
