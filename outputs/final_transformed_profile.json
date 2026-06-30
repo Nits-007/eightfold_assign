@@ -1,0 +1,53 @@
+[
+  {
+    "id": "cand_815ae585",
+    "candidate_name": "Jane Doe",
+    "contact_emails": [
+      "jane.doe.pro@example.com",
+      "jane.doe@gmail.com"
+    ],
+    "primary_phone": "+14155552671",
+    "bio_headline": "Senior Software Engineer",
+    "all_skills": [
+      "python",
+      "machine learning",
+      "c++",
+      "distributed systems",
+      "ml/ai",
+      "docker",
+      "kubernetes",
+      "flask"
+    ],
+    "country_code": "US",
+    "overall_confidence": 0.92
+  },
+  {
+    "id": "cand_0fc27952",
+    "candidate_name": "Alex Smith",
+    "contact_emails": [
+      "asmith99@example.com"
+    ],
+    "primary_phone": "+11234567890",
+    "bio_headline": "Junior Dev",
+    "all_skills": [
+      "react",
+      "node"
+    ],
+    "overall_confidence": 0.95
+  },
+  {
+    "id": "cand_12c2bd6b",
+    "candidate_name": "Alex S.",
+    "contact_emails": [
+      "alex.s@test.io"
+    ],
+    "bio_headline": "Frontend ninja",
+    "all_skills": [
+      "react",
+      "typescript",
+      "tailwindcss"
+    ],
+    "country_code": "IN",
+    "overall_confidence": 0.85
+  }
+]
