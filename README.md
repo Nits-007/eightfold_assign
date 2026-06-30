@@ -3,6 +3,10 @@
 
 A robust, deterministic ETL pipeline designed to ingest, normalize, merge, and dynamically project candidate profile data from structured and unstructured sources.
 
+## Video Link
+
+https://drive.google.com/file/d/1wyYvM2EnnSvT0p4M9p6bNZJM0KVnoaTh/view?usp=sharing
+
 ## How to Run
 
 **1. Clone this Repository**
