@@ -1,0 +1,34 @@
+{
+  "fields": [
+    {
+      "path": "id",
+      "from": "candidate_id"
+    },
+    {
+      "path": "candidate_name",
+      "from": "full_name"
+    },
+    {
+      "path": "contact_emails",
+      "from": "emails"
+    },
+    {
+      "path": "primary_phone",
+      "from": "phones[0]"
+    },
+    {
+      "path": "bio_headline",
+      "from": "headline"
+    },
+    {
+      "path": "all_skills",
+      "from": "skills[].name"
+    },
+    {
+      "path": "country_code",
+      "from": "location.country"
+    }
+  ],
+  "include_confidence": true,
+  "on_missing": "omit"
+}

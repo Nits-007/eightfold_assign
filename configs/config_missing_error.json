@@ -1,0 +1,13 @@
+{
+  "fields": [
+    {
+      "path": "full_name"
+    },
+    {
+      "path": "required_field_that_does_not_exist",
+      "from": "magic_field[0]"
+    }
+  ],
+  "include_confidence": true,
+  "on_missing": "error"
+}
