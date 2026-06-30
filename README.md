@@ -47,4 +47,7 @@ Run the main script. The script generates interactive mock inputs on its first r
 
 ```bash
 python main.py --structured inputs/<json structured data file> --unstructured inputs/<json unstructured data file> --config configs/<json config file>
+
+For example:
+python main.py --input inputs/ats_complex.json --unstructured inputs/github_complex.json --config configs/config_rename_all.json
 ```
