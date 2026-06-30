@@ -1,0 +1,13 @@
+{
+  "fields": [
+    {
+      "path": "full_name"
+    },
+    {
+      "path": "primary_email",
+      "from": "emails[0]"
+    }
+  ],
+  "include_confidence": false,
+  "on_missing": "null"
+}
