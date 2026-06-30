@@ -1,7 +1,7 @@
 [
   {
     "name": "Jane Doe",
-    "email": "jane.doe@gmail.com",
+    "email": ["jane.doe@gmail.com"],
     "phone": "415-555-2671",
     "skills": [
       "python",
@@ -10,7 +10,7 @@
   },
   {
     "name": "John Smith",
-    "email": "jsmith@example.com",
+    "email": ["jsmith@example.com"],
     "phone": "555-123-4567",
     "skills": [
       "java",
