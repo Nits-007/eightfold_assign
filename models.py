@@ -37,7 +37,7 @@ class Provenance(BaseModel):
 
 class CanonicalProfile(BaseModel):
     candidate_id: str
-    full_name: str
+    full_name: Optional[str] = None
     emails: List[str] = Field(default_factory=list)
     phones: List[str] = Field(default_factory=list)
     location: Optional[Location] = None
