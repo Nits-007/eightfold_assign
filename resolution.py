@@ -3,7 +3,7 @@ from typing import List, Dict, Any
 from models import CanonicalProfile, Provenance, Skill
 
 def _flatten(value):
-    """Flatten a value that may be a flat list or a list-of-lists into a flat list of strings."""
+    #Flatten a value that may be a flat list or a list-of-lists into a flat list of strings
     result = []
     for item in value:
         if isinstance(item, list):
@@ -13,12 +13,12 @@ def _flatten(value):
     return result
 
 def group_candidate_records(records: List[Dict[str, Any]]) -> List[List[Dict[str, Any]]]:
-    """
-    Groups raw records into clusters belonging to the same entity based on matching priorities:
-    1. Overlapping emails
-    2. Overlapping normalized phones
-    3. Overlapping full name AND date of birth
-    """
+    
+    #Groups raw records into clusters belonging to the same entity based on matching priorities:
+    #1. Overlapping emails
+    #2. Overlapping normalized phones
+    #3. Overlapping full name AND date of birth
+    
     clusters = []
     
     for record in records:
@@ -63,10 +63,10 @@ def group_candidate_records(records: List[Dict[str, Any]]) -> List[List[Dict[str
     return clusters
 
 def merge_candidate_records(records: List[Dict[str, Any]]) -> CanonicalProfile:
-    """
-    Takes a list of raw records that belong to the SAME candidate and merges them 
-    into a single Pydantic-validated Canonical Profile.
-    """
+    
+    #Takes a list of raw records that belong to the SAME candidate and merges them 
+    #into a single Pydantic-validated Canonical Profile.
+    
     # Sort records by trust_tier descending (highest trust first)
     records.sort(key=lambda x: x.get("trust_tier", 0), reverse=True)
     
