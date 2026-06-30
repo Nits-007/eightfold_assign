@@ -1,7 +1,7 @@
 [
   {
     "name": "Jane Doe",
-    "email": "jane.doe.pro@example.com",
+    "email": ["jane.doe.pro@example.com"],
     "phone": "(415)555-2671",
     "date_of_birth": "1990-05-15",
     "headline": "Senior Software Engineer",
@@ -20,7 +20,7 @@
   },
   {
     "name": "Jane Doe",
-    "email": "jane.doe@gmail.com",
+    "email": ["jane.doe@gmail.com"],
     "phone": "4155552671",
     "date_of_birth": "1990/05/15",
     "skills": [
@@ -31,7 +31,7 @@
   },
   {
     "name": "Alex Smith",
-    "email": "asmith99@example.com",
+    "email": ["asmith99@example.com"],
     "phone": "123-456-7890",
     "date_of_birth": "Jan 1, 1999",
     "headline": "Junior Dev",
