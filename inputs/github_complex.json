@@ -1,0 +1,28 @@
+[
+  {
+    "developer_name": "Jane Doe",
+    "contact_email": "jane.doe@gmail.com",
+    "bio": "Hacker & Builder. Python fanatic.",
+    "dob": "15-05-1990",
+    "country": "USA",
+    "experience_years": 8.5,
+    "repo_tags": [
+      "python",
+      "docker",
+      "kubernetes",
+      "flask"
+    ]
+  },
+  {
+    "developer_name": "Alex S.",
+    "contact_email": "alex.s@test.io",
+    "bio": "Frontend ninja",
+    "country": "India",
+    "experience_years": 2,
+    "repo_tags": [
+      "react",
+      "typescript",
+      "tailwindcss"
+    ]
+  }
+]
